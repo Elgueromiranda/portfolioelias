@@ -18,9 +18,9 @@ class Api::V1::ContactsController < ApplicationController
     if @contact.valid?
   contact = PostmarkMailer.with(message_params).send_email
   contact.deliver_now
-      redirect_to root_path, :notice => "Message sent"
+      redirect_to root_path, notice: "Email received. Message sent succesfully."
     else
-       redirect_to home_contact_path, :notice => "Failed to send message"
+       redirect_to home_contact_path, alert: "Failed to send message. "
 
     end
     
