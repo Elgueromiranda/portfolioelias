@@ -83,4 +83,4 @@ production:
   <<: *default
   database: portfolio_production
   username: portfolio
-  password: <%= ENV["PORTFOLIO_DATABASE_PASSWORD"] %>
+  password: <%= Rails.application.credentials.PORTFOLIO_DATABASE_PASSWORD %>
