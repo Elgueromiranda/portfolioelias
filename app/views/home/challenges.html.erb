@@ -1,0 +1,62 @@
+<center>
+    <div style="height: 550px" class="bg-white">
+
+ <div class="container">
+  <div class="row">
+    <div class="col">
+    <%=link_to "https://github.com/Elgueromiranda/cypher", target:"_blank" do %>
+    <%= image_tag("cypher.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>    </div>
+    <div class="col">
+    <%=link_to "https://github.com/Elgueromiranda/dice", target:"_blank" do %>
+    <%= image_tag("dice.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <%=link_to "https://github.com/Elgueromiranda/flash/tree/elias/source", target:"_blank" do %>
+    <%= image_tag("flash.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>    </div>
+    <div class="col">
+            <%=link_to "https://github.com/Elgueromiranda/guessing_game", target:"_blank" do %>
+            <%= image_tag("guessingGame.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>
+    </div>
+      </div>
+
+  <div class="row">
+    <div class="col">
+    <%=link_to "https://github.com/Elgueromiranda/rspec/tree/elias/source", target:"_blank" do %>
+    <%= image_tag("rspec.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>    </div>
+    <div class="col">
+    <%=link_to "https://github.com/Elgueromiranda/scratch/tree/elias/source", target:"_blank" do %>
+    <%= image_tag("scratch.png", size: "350x200", class: "mt-5 pl-5 pr-3 img-fluid")%>
+
+            <% end %>    </div>
+  </div>
+    </div>
+    </div>
+</center>
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>

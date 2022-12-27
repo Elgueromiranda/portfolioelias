@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "navbar", "data-turbo-track": "reload", defer: true %>
+        
+    <%= javascript_include_tag "particles", "data-turbo-track": "reload", defer: true %>
+
+
+    <%= render 'home/header'%>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

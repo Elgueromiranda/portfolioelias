@@ -1,0 +1,47 @@
+ <div class="bg-secondary" style="height: 750px">
+  <br>
+<center><div class="container bg-black p-5 pt-4" style="text-align: left; height: 400px; border-radius: 20px;font-family: Times New Roman, Times, serif;">
+
+    <%= form_for :contact, url: "/api/v1/contacts", method: :post, class:"row g-3 bg-white text-black p-3 mt-5 rounded" do |form| %>
+        <div class="col col-md-6">
+        <%= form.label :first_name , class: "col-form-label col-form-label-lg"%>
+        <%= form.text_field :first_name , class: "col form-control form-control-lg"%>
+      </div>
+   <div class="col col-md-6">
+
+        <%= form.label :last_name , class: "col-form-label col-form-label-lg"%>
+        <%= form.text_field :last_name , class: "col form-control form-control-lg"%>
+      </div>
+  <div class="col-12">
+        <%= form.label :email , class: "col-sm-2 col-form-label col-form-label-lg"%>
+        <%= form.email_field :email , class: "form-control form-control-lg"%>
+              </div>
+
+  <div class="col-12">
+        <%= form.label :message , class: "col-sm-2 col-form-label col-form-label-lg"%>
+        <%= form.text_area :message , class: "form-control form-control-lg"%>
+              </div>
+
+
+        <%= form.submit "Send Message", class:"btn btn-primary" %>
+    
+    <% end %>
+
+</div></center>
+</div>
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
