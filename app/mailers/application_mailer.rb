@@ -1,3 +1,3 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "#{Rails.application.credentials.postmark_api_token}"
+  default from: ENV['form_email']
 end
