@@ -32,6 +32,7 @@ gem "jbuilder"
 gem 'postmark-rails', '~> 0.22.1'
 gem 'dartsass-rails', '~> 0.4.1'
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
