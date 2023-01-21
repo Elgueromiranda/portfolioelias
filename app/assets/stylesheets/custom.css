@@ -1,0 +1,74 @@
+#homeLabel:hover{
+   animation: 3s slide-left;
+}
+
+.card:hover .card-title{
+   display: none;
+}
+
+.card{
+  background-image: linear-gradient(to bottom right, #4F5154, #000000);
+}
+
+.card:hover{
+   background-color: white;
+}
+.card-text{
+   visibility: hidden;
+}
+.card:hover .card-text{
+   visibility: visible;
+
+}
+
+.btn-secondary{
+   visibility: hidden;
+}
+.card:hover .btn-secondary{
+   visibility: visible;
+}
+
+
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+
+}
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+ }
+
+ .slide-bottom {
+  animation: 3s slide-bottom;
+}
+@keyframes slide-bottom {
+
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+ }
