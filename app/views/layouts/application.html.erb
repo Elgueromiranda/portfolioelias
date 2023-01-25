@@ -17,6 +17,20 @@
   </head>
 
   <body>
+    <script>
+document.getElementById("form").onclick = loseFocus;
+function loseFocus() 
+{
+    document.getElementById("form").blur();
+}
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
        <% if notice %>
     <%= render 'layouts/notice' %>
     <% end %>
@@ -25,7 +39,20 @@
     <% end %>
     <%= render 'home/header'%>
 
+
     <%= yield %>
+         <script>
+             currLoc = $(location).attr('href');
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50 && currLoc != "http://localhost:3000/home/portfolio") {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
   </body>
 </html>
 

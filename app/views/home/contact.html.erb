@@ -1,11 +1,12 @@
  <div class="bg-dark bg-gradient" style="height: 1200px">
   <br>
 <center><div class="container bg-none p-5 pt-4" style="text-align: left;font-family: Times New Roman, Times, serif;">
-        <h1 class="mt-0 text-center text-white display-1">Contact</h1>
+        <h1 class="mt-0 text-center text-white display-1 text-slide-right">Contact</h1>
 
+        <div class="test-slide">
     <hr class="divider" style="color: white;">
 
-    <%= form_for :contact, url: "/api/v1/contacts", method: :post, class:"row g-3 bg-none text-black p-3 mt-5 rounded" do |form| %>
+    <%= form_for :contact, url: "/api/v1/contacts", method: :post, class:"row g-3 bg-none text-black p-3 mt-5 rounded", id:"form" do |form| %>
         <div class="col mb-3">
         <%= form.label :first_name , class: "col-form-label col-form-label-lg text-white"%>
         <%= form.text_field :first_name , class: "col form-control form-control-lg"%>
@@ -30,23 +31,11 @@
         <%= form.submit "Send Message", class:"btn btn-primary rounded-pill" %>
     </div>
     <% end %>
+    </div>
 
 </div></center>
+<%= link_to "hello", id: "toggle", class:"btn btn-primary" %>
+
 
 </div>
 
-
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>

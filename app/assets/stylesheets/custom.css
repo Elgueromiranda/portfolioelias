@@ -1,5 +1,9 @@
-#homeLabel:hover{
-   animation: 3s slide-left;
+.porfolio-grid {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
 .card:hover .card-title{
@@ -7,11 +11,12 @@
 }
 
 .card{
-  background-image: linear-gradient(to bottom right, #4F5154, #000000);
+  background-color: #F8F8FF;
 }
 
 .card:hover{
-   background-color: white;
+   background-color: #6c757d;
+  
 }
 .card-text{
    visibility: hidden;
@@ -21,11 +26,12 @@
 
 }
 
-.btn-secondary{
+.btn-outline-primary{
    visibility: hidden;
 }
-.card:hover .btn-secondary{
+.card:hover .btn-outline-primary{
    visibility: visible;
+   background-color: #000000;
 }
 
 
@@ -72,3 +78,113 @@
       transform: translateY(0);
    }
  }
+
+ /*
+ * Keyframes
+ */
+
+.test-slide {
+  animation-duration: 3s;
+  animation-name: testSlide;
+}
+
+@keyframes testSlide {
+  from {
+   opacity: 0;
+    width: 50%;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.text-slide-right {
+  animation: 1s text-slide-right 2s forwards;
+   opacity: 0;
+    transform:translateX(100px);
+}
+
+@keyframes text-slide-right {
+  to {
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+.text-slow-right {
+  animation: 1s text-slow-right 1s forwards;
+   opacity: 0;
+    transform:translateX(100px);
+}
+
+@keyframes text-slow-right {
+  to {
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+.text-slow-left {
+  animation: 1s text-slow-left 2s forwards;
+   opacity: 0;
+    transform:translateX(-100px);
+}
+
+@keyframes text-slow-left {
+  to {
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+
+#click{
+   background-color: #212529; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+
+.arrow-circle-down {
+   display: block;
+   width: 40px;
+   height: 40px;
+   margin: 16px 0;
+   /*fill: #fff;*/
+}
+
+.bounce {
+   -webkit-animation: bounce 2s;
+           animation: bounce 2s;
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+}
+
+
+
+@keyframes bounce {
+   0%,
+   25%,
+   50%,
+   75%,
+   100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+   }
+   40% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+   }
+   60% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+   }
+}
+
+

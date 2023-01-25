@@ -1,25 +1,6 @@
-    <div style="height: 2300px;   background-image: linear-gradient(black, #343a40);">
-            <div class="container" style="padding-top: 50px;">
 
- 
- <%#description section -----------------------------------------------------------------------%>
-            <div class="row bg-black  rounded mt-3">
-                <div class="col-10 p-3">
-                
-                <h1 class="text-white" style="font-family: Times New Roman, Times, serif;">SPA with React, EmailJs with Rails backend, PostgreSQL contact list , Tailwind CSS</h1> 
-                    </div>
-                <div class="col-1" style="margin-top: 10px;margin-bottom: 10px;">
-                    <%= link_to "Repository", "https://github.com/Elgueromiranda/cacahuatespomskies/tree/elias/app/javascript/components", class:"btn btn-primary rounded-pill", target:"_blank" %>
-                    <%=link_to "Live Site","https://cacahuatespomskies.herokuapp.com/", class:"btn btn-primary rounded-pill"%>        
-                    </div>   
- 
-     </div>
-
-
-
-<%#description section -----------------------------------------------------------------------%>
-
-<div class="row bg-black rounded mt-4"> 
+<div class="porfolio-grid container position-absolute top-50 start-50 translate-middle" style="margin-top: 500px;">
+    <div class="row bg-transparent rounded" style="margin-bottom: 250px;"> 
         <div class="col-10 p-3">
             <h1 class="text-white" style="font-family: Times New Roman, Times, serif;">
                 Javascript API with Rails backend using fetch ,PostgreSQL implemented search by place and city,
@@ -36,10 +17,20 @@
         </div>
   
 </div>
+            <div class="row bg-transparent rounded" style="margin-bottom: 250px;">
+                <div class="col-10 p-3">
+                
+                <h1 class="text-white" style="font-family: Times New Roman, Times, serif;">SPA with React, EmailJs with Rails backend, PostgreSQL contact list , Tailwind CSS</h1> 
+                    </div>
+                <div class="col-1" style="margin-top: 10px;margin-bottom: 10px;">
+                    <%= link_to "Repository", "https://github.com/Elgueromiranda/cacahuatespomskies/tree/elias/app/javascript/components", class:"btn btn-primary rounded-pill", target:"_blank" %>
+                    <%=link_to "Live Site","https://cacahuatespomskies.herokuapp.com/", class:"btn btn-primary rounded-pill"%>        
+                    </div>   
+ 
+     </div>
 
-        <%#description section -----------------------------------------------------------------------%>
 
-<div class="row bg-black rounded mt-4"> 
+<div class="row bg-transparent rounded"> 
 
     <div class="col-10 p-3">
                 
@@ -57,27 +48,21 @@
         </div>
 
     </div>
-
 </div>
 
-</div>
+<script>
+
+         navbar = document.getElementById("nav");
+
+     particles = document.getElementById("particles-js");
+    function yourfunction() { particles.style.height = "1500px"; window.dispatchEvent(new Event('resize'));}
+
+window.onload = yourfunction;
+
+</script>
 
 
 
 
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
 
 
