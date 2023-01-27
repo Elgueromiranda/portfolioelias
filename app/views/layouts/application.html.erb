@@ -45,7 +45,7 @@ function loseFocus()
              currLoc = $(location).attr('href');
 
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 50 && currLoc != "http://localhost:3000/home/portfolio") {
+            if ($(document).scrollTop() > 50 ) {
                 $('.nav').addClass('affix');
                 console.log("OK");
             } else {

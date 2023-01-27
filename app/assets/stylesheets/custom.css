@@ -15,7 +15,7 @@ grid-row-gap: 0px;
 }
 
 .card:hover{
-   background-color: #6c757d;
+   background-color: #F8F8FF;
   
 }
 .card-text{
@@ -186,5 +186,10 @@ grid-row-gap: 0px;
               transform: translateY(-12px);
    }
 }
-
+.custom-shape-divider-top-1674841426 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
 
