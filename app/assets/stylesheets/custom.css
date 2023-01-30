@@ -187,7 +187,7 @@ grid-row-gap: 0px;
    }
 }
 
-.col-10:hover .images {
+.info:hover .images {
    filter: blur(5px);
 
 }
@@ -195,7 +195,7 @@ grid-row-gap: 0px;
    display: none;
 }
 
-.col-10:hover .projects {
+.info:hover .projects {
    display: block;
    position: absolute;
    transform: translateY(-5ch);
