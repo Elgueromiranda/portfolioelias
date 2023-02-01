@@ -1,50 +1,44 @@
+<h1 class="text-center text-white" style="font-family: Times New Roman, Times, serif; font-size: 4.3vw;opacity: 0.5;">Click on project to travel to live site</h1>
+<div class="porfolio-grid" style="padding-top: 100px; margin-left: 5px; margin-right: 5px;">
 
+            <div class="row bg-transparent rounded slide-right pr-1 pl-1" style="margin-bottom: 150px;">
+                <div class="info container">
                 <%=link_to "https://cacahuatespomskies.herokuapp.com/", target: "_blank" do %> 
-                <%= image_tag("lakeinthehills", height: "300px", width: "80%" , class: "images")%>
+                <%= image_tag("lakeinthehills", size: "800x250" , class: "images", style: " max-width: 100%;")%>
                     <% end %>
-             
-                    <%=link_to "Live Site","https://cacahuatespomskies.herokuapp.com/" ,class:"btn btn-primary mb-5"%>       
-                    <%= link_to "Github", "https://github.com/Elgueromiranda/cacahuatespomskies/tree/elias/app/javascript/components", class:"btn btn-primary", target:"_blank" %>
+                    </div>
+                    <%= link_to  "Github","https://github.com/Elgueromiranda/cacahuatespomskies", class: "btn btn btn-primary mt-5 btn-lg rounded-pill" %>
 
+     </div>
+    <div class="row bg-transparent rounded slide-left pr-1 pl-1" style="margin-bottom: 150px;"> 
+        <div class="info container">
             <%=link_to "https://wifispeedapp.herokuapp.com", target: "_blank" do %> 
-            <%= image_tag("wifi", height: "300px", width: "80%" , class: "images")%>
+            <%= image_tag("wifi", size: "800x250" , class: "images", style: " max-width: 100%;")%>
             <% end %>
-         
-             
-        <%=link_to "Live Site","https://wifispeedapp.herokuapp.com", class: "btn btn-primary mb-5" ,target:"_blank"%>
-     <%= link_to "Github", "https://github.com/Elgueromiranda/wifiapp/tree/elias/app/javascript/components", class:"btn btn-primary" , target:"_blank"%>
-   
-  
+        </div>
+            <%= link_to  "Github","https://github.com/Elgueromiranda/cacahuatespomskies", class: "btn btn btn-primary mt-5 btn-lg rounded-pill" %>
+
+
+</div>
+
+
+    <div class="row bg-transparent rounded slide-left pr-1 pl-1" style="margin-bottom: 150px;"> 
+        <div class="info container">
         <%=link_to "https://friendapp.herokuapp.com", target: "_blank" do %> 
-        <%= image_tag("friends", height: "300px", width: "80%" , class: "images")%>
+           <%= image_tag("friends", size: "800x250" , class: "images", style: " max-width: 100%;")%>
         <% end %>
-      
-
-        <%=link_to "Live Site","https://friendapp.herokuapp.com", class:"btn btn-primary mb-5", target:"_blank" %>
-
-
-        <%= link_to "Github", "https://github.com/Elgueromiranda/friends-app/tree/elias/app/views",class:"btn btn-primary", target:"_blank"  %>
+        </div>
+            <%= link_to  "Github","https://github.com/Elgueromiranda/cacahuatespomskies", class: "btn btn btn-primary mt-5 btn-lg rounded-pill" %>
 
 
+</div>
+</div>
 
 
 
 
 
-
-
-
-<script>
-
-         navbar = document.getElementById("nav");
-
-     particles = document.getElementById("particles-js");
-    function yourfunction() { particles.style.height = "1200px"; window.dispatchEvent(new Event('resize'));}
-
-window.onload = yourfunction;
-
-</script>
-
+=
 
 
 
